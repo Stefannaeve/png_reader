@@ -1,0 +1,4 @@
+#ifndef PNGREADER_MAIN_H
+#define PNGREADER_MAIN_H
+
+#endif //PNGREADER_MAIN_H
