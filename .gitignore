@@ -1,2 +1,5 @@
 /.idea/
 /cmake-build-debug/
+/debug.txt
+/main
+/obj/main.o
