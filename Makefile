@@ -2,7 +2,7 @@ TARGET = main
 INCLDIR = ./include
 SRCDIR = src
 BINDIR = bin
-LIBS =
+LIBS = lib/SNLogger.a
 CC = gcc
 CFLAGS = -O0 -g -lncurses
 CFLAGS += -I$(INCLDIR)
@@ -22,7 +22,7 @@ $(OBJDIR)/%.o: $(SRCDIR)/%.c $(DEPS)
 	$(CC) -c -o $@ $< $(CFLAGS)
 
 $(TARGET): $(OBJS)
-	$(CC) -o $@ $^ $(CFLAGS)
+	$(CC) -o $@ $^ $(LIBS) $(CFLAGS)
 
 valgrind:
 	make
