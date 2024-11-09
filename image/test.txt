@@ -1,0 +1,22 @@
+Parameters
+
+This function accept three parameters −
+FILE *stream: A pointer to a FILE object that identifies the stream.
+long int offset: The number of bytes to move the file pointer.
+int whence: The position from which the offset is added. It can have one of the following values:
+
+    SEEK_SET: Beginning of the file.
+    SEEK_CUR: Current position of the file pointer.
+    SEEK_END: End of the file.
+
+
+Explore our latest online courses and learn new skills at your own pace. Enroll and become a certified expert to boost your career.
+Return Value
+
+The function returns 0 on success and Non-zero value on failure. The function also sets the errno to indicate the error.
+
+Example 1: Moving to the Beginning of the File
+
+This program opens a file and moves the file pointer to the beginning of the file before reading the first character.
+
+Below is the illustration of the C library fseek() function.

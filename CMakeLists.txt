@@ -4,4 +4,8 @@ project(PngReader C)
 set(CMAKE_C_STANDARD 11)
 
 add_executable(PngReader src/main.c
-        include/main.h)
+        include/main.h
+        src/huffman.c
+        include/huffman.h
+        src/binaryTree.c
+        include/binaryTree.h)
